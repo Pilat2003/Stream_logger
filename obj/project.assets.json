@@ -9,24 +9,31 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Stanowisko\\.nuget\\packages\\": {}
+    "C:\\Users\\Klasa1\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stanowisko\\Desktop\\anakonda\\anakonda.csproj",
+      "projectUniqueName": "C:\\Users\\Klasa1\\Documents\\GitHub\\Stream_logger\\anakonda.csproj",
       "projectName": "anakonda",
-      "projectPath": "C:\\Users\\Stanowisko\\Desktop\\anakonda\\anakonda.csproj",
-      "packagesPath": "C:\\Users\\Stanowisko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stanowisko\\Desktop\\anakonda\\obj\\",
+      "projectPath": "C:\\Users\\Klasa1\\Documents\\GitHub\\Stream_logger\\anakonda.csproj",
+      "packagesPath": "C:\\Users\\Klasa1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Klasa1\\Documents\\GitHub\\Stream_logger\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Stanowisko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Klasa1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -50,27 +57,26 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.13, 6.0.13]"
+            "version": "[6.0.5, 6.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Crossgen2.win-x64",
-            "version": "[6.0.13, 6.0.13]"
+            "version": "[6.0.5, 6.0.5]"
           },
           {
             "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.13, 6.0.13]"
+            "version": "[6.0.5, 6.0.5]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.13, 6.0.13]"
+            "version": "[6.0.5, 6.0.5]"
           }
         ],
         "frameworkReferences": {
@@ -78,7 +84,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

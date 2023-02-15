@@ -14,18 +14,16 @@ class Program
         //Console.WriteLine("Hello, World!");
      Process process = new Process();
 // Configure the process using the StartInfo properties.
-process.StartInfo.FileName = @"C:\Users\Stanowisko\.vscode\extensions\ms-dotnettools.csharp-1.25.4-win32-x64\.omnisharp\1.39.4-net6.0\os.exe";
+process.StartInfo.FileName = @"C:\Users\Klasa1\.vscode\extensions\ms-dotnettools.csharp-1.25.4-win32-x64\.omnisharp\1.39.4-net6.0\omnisharp.exe";
 process.StartInfo.RedirectStandardInput = true;
 process.StartInfo.RedirectStandardOutput= true;
-
-        FileStream s = File.Open(@"C:\Users\Stanowisko\Desktop\anakonda\output\data.txt", FileMode.OpenOrCreate);
+        FileStream s = File.Open(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\data.txt", FileMode.OpenOrCreate);
         s.SetLength(0);
         StreamWriter w = new StreamWriter(s);
 
 
         process.Start();
 
-        Thread.Sleep(2000);
 
         StreamReader r = new StreamReader(process.StandardOutput.BaseStream);
         string message = "";
@@ -34,9 +32,9 @@ process.StartInfo.RedirectStandardOutput= true;
         message += bfv + "\n";
         }
         message += "\n";
-
+        
         Task.Run(()=>{
-            Thread.Sleep(100000);
+            Thread.Sleep(10000);
             Execute = false;
         });
                 while(Execute){
@@ -48,7 +46,7 @@ process.StartInfo.RedirectStandardOutput= true;
 
         while(r.Peek() != -1){
              message+= "[Omni] \n";
-             string ss = r.ReadLine();
+             string ss = inputRead.ReadLine();
              System.Console.WriteLine(ss);
             message+= ss;
              message+= "[*Omni*] \n";
