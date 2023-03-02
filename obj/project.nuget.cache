@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "PZL5mXdrpZnOFfup/NW9jTjxhjNrGU1jtM9VeHqm2M/oGsTCNhoY79Fqt8ioL1bwx6ZB8zBNp1yzzLdwD8MoyA==",
+  "dgSpecHash": "zS4EM9J0srqf7zeMa+nKwyovM9N2J+tHBbg6AgaeTup6ThdEKQewNci7OPcp+jeK/Ssg97+tkhStU++yCbHY8w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Klasa3\\Documents\\GitHub\\Stream_logger\\anakonda.csproj",
+  "projectFilePath": "E:\\github\\Stream_logger\\anakonda.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Klasa3\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.8\\microsoft.netcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\Klasa3\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.8\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\Klasa3\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.8\\microsoft.aspnetcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
-    "C:\\Users\\Klasa3\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.8\\microsoft.netcore.app.crossgen2.win-x64.6.0.8.nupkg.sha512"
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.13\\microsoft.netcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.13\\microsoft.aspnetcore.app.runtime.win-x64.6.0.13.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.netcore.app.crossgen2.win-x64\\6.0.13\\microsoft.netcore.app.crossgen2.win-x64.6.0.13.nupkg.sha512"
   ],
   "logs": []
 }

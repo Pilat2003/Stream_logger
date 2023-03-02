@@ -4,65 +4,59 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 namespace anakonda;
-class Program
+class cProgram
 {
     public static bool Execute = true;
     public static string message = "";
-    public static  Action<Task<string>> ReadVSCode = (a)=>{
-        
-        message+= "[VS Code] \n";
-            message+= a.Result;
-             message+= "[*VS Code*] \n";
-             if(Execute)
-              inputRead.ReadLineAsync().ContinueWith(ReadVSCode);
-    };
 
-    public static  Action<Task<string>> ReadOmni = (a)=>{
-        message+= "[Omnisharp] \n";
-            message+= a;
-             message+= "[*Omnisharp*] \n";
-             if(Execute)
-             r.ReadLineAsync().ContinueWith(ReadOmni);
-    };
+public static Stream _stdInput;
+public static Stream _stdOutput;
 
-    public static StreamReader inputRead;
-    public static StreamReader r;
-    static void Main(string[] args)
+public static async void ReadLoop(){
+
+    try{
+
+        StreamReader r = new StreamReader(_stdInput);
+        StreamWriter w = new StreamWriter(_stdOutput);
+        string t = await  r.ReadLineAsync();
+        w.WriteLine(t);
+        w.Flush();
+        r.Close();
+        w.Close();
+       
+
+    }
+    catch(IOException ex){
+
+    }
+    finally{
+        ReadLoop();
+    }
+
+}
+     
+    static void cMain(string[] args)
     {
-        Stream input = Console.OpenStandardInput();
-        inputRead = new StreamReader(input);
-        //Console.WriteLine("Hello, World!");
+     _stdInput = Console.OpenStandardInput();
+     _stdOutput = Console.OpenStandardOutput();
+
+
+
+      StreamWriter w = new StreamWriter(_stdOutput);
+      StreamReader r = new StreamReader(_stdInput);
      Process process = new Process();
 // Configure the process using the StartInfo properties.
-process.StartInfo.FileName = @"C:\Users\Klasa3\.vscode\extensions\ms-dotnettools.csharp-1.25.4-win32-x64\.omnisharp\1.39.4-net6.0\omnisharp.exe";
+process.StartInfo.FileName = @"E:\github\Stream_logger\test\testcase2\End.exe";
 process.StartInfo.RedirectStandardInput = true;
 process.StartInfo.RedirectStandardOutput= true;
 
         process.Start();
 
-
-        r = new StreamReader(process.StandardOutput.BaseStream);
-        message = "";
-        message += "[ARGS] \n";
-        foreach(string bfv in args){
-        message += bfv + "\n";
-        }
-        message += "\n";
         
-       
- 
-            Thread.Sleep(10000);
-            Execute = false;
-            message += r.ReadToEnd();
-            message += inputRead.ReadToEnd();
-           // FileStream s = File.Open(@"C:\Users\Klasa3\Documents\data.txt", FileMode.OpenOrCreate);
-       // s.SetLength(0);
-       // StreamWriter w = new StreamWriter(s);
+        while(Execute){
+            Thread.Sleep(100);
+        }
+
         File.WriteAllText(@"C:\Users\Klasa3\Documents\data.txt", message);
-            
-        // w.WriteLine(message);
-        //w.Flush();
-        //w.Close();
-        //s.Close();
-    }
+}
 }
