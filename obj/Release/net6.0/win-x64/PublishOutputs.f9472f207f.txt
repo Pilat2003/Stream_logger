@@ -1,2 +1,0 @@
-C:\Users\Stanowisko\Desktop\anakonda\bin\Release\net6.0\win-x64\publish\anakonda.pdb
-C:\Users\Stanowisko\Desktop\anakonda\bin\Release\net6.0\win-x64\publish\anakonda.exe
